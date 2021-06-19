@@ -3,7 +3,7 @@ const newline = "\n"
 const alignColumns = (text) => {
   const lines = text.split(newline)
   if (lines.length <= 1) {
-    return text
+    return text.replace(/\$/g, " ").trim()
   }
 
   const wordsInLine = []
